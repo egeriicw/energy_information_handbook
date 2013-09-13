@@ -27,6 +27,9 @@ def perDiff(array = None):
 	if array == None:
 		return None
 	else:
+
+		#  Returns percent difference in decimal format which 
+		#  is equal to (X2 - X1) / X1 
 		return np.diff(np.array(array, dtype=float)) / array[:-1]
 
 
